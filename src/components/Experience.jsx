@@ -24,6 +24,7 @@ import {
 } from "@react-three/postprocessing";
 import { Banana } from "./models/items/Banana_peel_mario_kart";
 import { ItemBox } from "./models/misc/Gift";
+import { Bomb } from "./models/misc/Bomb";
 import { useStore } from "./store";
 import { Shell } from "./models/items/Mario_shell_red";
 import { Coin } from "./models/misc/Super_mario_bros_coin";
@@ -153,6 +154,7 @@ export const Experience = () => {
       <ParisBis position={[0, 0, 0]} />
       <ItemBox position={[-20, 2.5, -119]} />
       <Coin position={[-30, 2, -119]} />
+      <Bomb position={[-40, 2, -119]} />
       <Skid />
       <Dust />
 
