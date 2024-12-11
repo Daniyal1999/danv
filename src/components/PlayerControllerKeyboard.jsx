@@ -9,7 +9,7 @@ import { useFrame, useThree, extend } from "@react-three/fiber";
 import { useRef, useState, useEffect, useCallback } from "react";
 import * as THREE from "three";
 
-import { Mario } from "./models/characters/Mario_kart";
+import { Mario } from "./models/characters/Mercedes";
 import { DriftParticlesLeft } from "./Particles/drifts/DriftParticlesLeft";
 import { DriftParticlesRight } from "./Particles/drifts/DriftParticlesRight";
 
