@@ -12,7 +12,7 @@ import { useFrame } from '@react-three/fiber';
 
 
 export function Bomb(props) {
-  const { nodes, materials } = useGLTF('./models/items/bomb.glb')
+  const { nodes, materials } = useGLTF('./models/misc/bomb.glb')
 
   const { actions } = useStore();
   const ref = useRef();
@@ -66,4 +66,4 @@ export function Bomb(props) {
 
 }
 
-useGLTF.preload('.models/items/bomb.glb')
+useGLTF.preload('./models/misc/bomb.glb')
