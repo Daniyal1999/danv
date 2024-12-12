@@ -25,6 +25,7 @@ import {
 import { Banana } from "./models/items/Banana_peel_mario_kart";
 import { ItemBox } from "./models/misc/Gift";
 import { Bomb } from "./models/misc/Bomb";
+import { Clock } from "./models/misc/Clock";
 import { useStore } from "./store";
 import { Shell } from "./models/items/Mario_shell_red";
 import { Coin } from "./models/misc/Super_mario_bros_coin";
@@ -155,6 +156,7 @@ export const Experience = () => {
       <ItemBox position={[-20, 2.5, -119]} />
       <Coin position={[-30, 2, -119]} />
       <Bomb position={[-40, 2, -119]} />
+      <Clock position={[-50, 2, -119]} />
       <Skid />
       <Dust />
 
