@@ -42,24 +42,24 @@ export function Clock(props) {
 
   return (
     <>
-      <RigidBody type="fixed" name="itemBox"
-        sensor
-        ref={body}
-        onIntersectionEnter={({ other }) => {
-          if (other.rigidBodyObject.name === "player") {
+    <RigidBody type="fixed" name="itemBox"
+      sensor
+      ref={body}
+      onIntersectionEnter={({other}) => {
+        if(other.rigidBodyObject.name === "player"){
 
-            actions.setItem();
-            setScale(0);
-            frames.current = 400;
-            body.current.setEnabled(false);
-          }
-        }}
-        position={props.position}
-        colliders={false} scale={[0, 0, 0]}
-      >
-        <CuboidCollider args={[1.5, 1.5, 1.5]} />
-      </RigidBody>
-      <group ref={ref} position={props.position} scale={[0.015, 0.015, 0.015]} dispose={null}>
+        actions.setItem();
+        setScale(0);
+        frames.current = 400;
+        body.current.setEnabled(false);
+        }
+      }}
+      position={props.position}
+      colliders={false}
+    >
+    <CuboidCollider args={[1.5, 1.5, 1.5]} />
+    </RigidBody>
+    <group ref={ref} position={props.position} scale={[scale*0.015, scale*0.015, scale*0.015]} dispose={null}>
         <mesh castShadow receiveShadow geometry={nodes.Mesh.geometry} material={materials['Material #271']} position={[0.077, 0.5, -0.019]}  />
         <mesh castShadow receiveShadow geometry={nodes.Mesh_1.geometry} material={materials['Material #272']} position={[0.077, 0.5, -0.019]} />
         <mesh castShadow receiveShadow geometry={nodes.Mesh_2.geometry} material={materials['Material #273']} position={[0.077, 0.5, -0.019]} />
